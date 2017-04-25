@@ -650,7 +650,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate, GameProtocol {
         KunaiCount.isHidden = true
         
         collectGoalLabel = childNode(withName: "collectGoal") as! SKLabelNode
-        collectGoalLabel.fontSize = 150
+        collectGoalLabel.fontSize = 100
         collectGoalLabel.horizontalAlignmentMode = .left
         collectGoalLabel.verticalAlignmentMode = .top
         collectGoalLabel.position.x = -100
@@ -661,11 +661,11 @@ class GameScene: SKScene, SKPhysicsContactDelegate, GameProtocol {
         collectGoalLabel.zPosition = 500
         collectGoalLabel.removeFromParent()
         camera!.addChild(collectGoalLabel)
-        collectGoalLabel.isHidden = false
+        collectGoalLabel.isHidden = true
 
         
         scoreLabel = childNode(withName: "score1") as! SKLabelNode
-        scoreLabel.fontSize = 150
+        scoreLabel.fontSize = 100
         scoreLabel.horizontalAlignmentMode = .left
         scoreLabel.verticalAlignmentMode = .top
         scoreLabel.position.x = -100
@@ -679,10 +679,10 @@ class GameScene: SKScene, SKPhysicsContactDelegate, GameProtocol {
         
         //added highScoreLabel
         highScoreLabel = childNode(withName: "highScore") as! SKLabelNode
-        highScoreLabel.fontSize = 100
+        highScoreLabel.fontSize = 80
 //        highScoreLabel.horizontalAlignmentMode = .Left
 //        highScoreLabel.verticalAlignmentMode = .Top
-        highScoreLabel.position.x = 150
+        highScoreLabel.position.x = 100
         highScoreLabel.position.y = 300
         highScoreLabel.fontColor = SKColor.yellow
         highScoreLabel.fontName = "Pixel Coleco"
@@ -726,7 +726,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate, GameProtocol {
         }
 
         playAgainButton = self.childNode(withName: "//playAgainButton") as! MSButtonNode
-        playAgainButton.zPosition = 200
+        playAgainButton.zPosition = 500
         playAgainButton.removeFromParent()
         camera!.addChild(playAgainButton)
         playAgainButton.isHidden = true
@@ -735,7 +735,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate, GameProtocol {
         ShareFeatureLabel = childNode(withName: "ShareFeatureLabel") as! SKLabelNode
         ShareFeatureLabel.fontSize = 100
         ShareFeatureLabel.position.x = 160
-        ShareFeatureLabel.position.y = -100
+        ShareFeatureLabel.position.y = 100
         ShareFeatureLabel.fontColor = SKColor.white
         ShareFeatureLabel.fontName = "Pixel Coleco"
         ShareFeatureLabel.zPosition = 300
@@ -746,9 +746,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate, GameProtocol {
         tapAnyWhereLabel = childNode(withName: "TapAnyWhere") as! SKLabelNode
         tapAnyWhereLabel.fontSize = 60
         
-        tapAnyWhereLabel.position.x = 160
-        tapAnyWhereLabel.position.y = 100
-        tapAnyWhereLabel.fontColor = SKColor.white
+        tapAnyWhereLabel.position.x = 130
+        tapAnyWhereLabel.position.y = 50
+        tapAnyWhereLabel.fontColor = SKColor.yellow
         tapAnyWhereLabel.fontName = "Pixel Coleco"
         
         tapAnyWhereLabel.zPosition = 300
@@ -757,11 +757,11 @@ class GameScene: SKScene, SKPhysicsContactDelegate, GameProtocol {
         tapAnyWhereLabel.isHidden = false
         
         gameOverLabel = childNode(withName: "gameOver") as! SKLabelNode
-        gameOverLabel.fontSize = 200
+        gameOverLabel.fontSize = 100
         
         gameOverLabel.position.x = 160
         gameOverLabel.position.y = 100
-        gameOverLabel.fontColor = SKColor.black
+        gameOverLabel.fontColor = SKColor.yellow
         gameOverLabel.fontName = "Pixel Coleco"
         
         gameOverLabel.zPosition = 300

@@ -51,7 +51,7 @@ class Dead: GKState {
             moveUpAction.timingMode = .easeOut
             let moveDownAction = SKAction.moveBy(x: 0, y: -(scene.size.height * 1.0), duration: 1.5)
             moveDownAction.timingMode = .easeIn
-            let hiddenAction = SKAction.hide()
+            _ = SKAction.hide()
             
             //FixMe up and down
             let sequence = SKAction.sequence([ moveUpAction,moveDownAction])

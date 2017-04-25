@@ -30,7 +30,6 @@ class GameWon: GKState {
             scene.twitterFeatureButton.isHidden = false
             print( scene.playAgainButton.position.x)
             print( scene.playAgainButton.position.y)
-            print( scene.playAgainButton.parent)
             print( scene.playAgainButton.zPosition)
             
 
